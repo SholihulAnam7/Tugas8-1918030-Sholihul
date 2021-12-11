@@ -47,7 +47,6 @@ public class HomeFragment extends Fragment implements APICategory.OnCategoryResp
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -65,7 +64,6 @@ public class HomeFragment extends Fragment implements APICategory.OnCategoryResp
 
         setViewpager();
     }
-
     private void setViewpager() {
         // set effect page while scrolling
         CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
@@ -132,7 +130,6 @@ public class HomeFragment extends Fragment implements APICategory.OnCategoryResp
             }
         });
     }
-
     @Override
     public void onCategoriesResponse(@Nullable ArrayList<Category> categories, VolleyError error) {
         if (categories != null) {
